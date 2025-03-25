@@ -1,0 +1,80 @@
+\documentclass[hidelinks, a4paper,12p, twoside]{report}
+%    \renewcommand{\baselinestretch}{1.6}      % interline spacing
+%
+% \includeonly{}
+%
+%			PREAMBLE
+%
+\usepackage[a4paper]{geometry}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{epsfig}
+\usepackage{graphicx}
+% \usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{tesi}
+\usepackage[round]{natbib}
+\usepackage{amssymb,amsmath,amsthm}
+% \usepackage{bbm}
+\usepackage{afterpage}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+\bibliographystyle{apalike}
+
+% per le accentate
+\usepackage[utf8]{inputenc}
+%
+\newtheorem{myteor}{Teorema}[section]
+%
+\newenvironment{teor}{\begin{myteor}\sl}{\end{myteor}}
+
+
+\titleformat{\chapter}[block]
+    {\bfseries\huge}{\filright\huge\thechapter.}{1ex}{\huge\filright}
+%
+%
+%			TITLE
+%
+\begin{document}
+\title{Algorithms for Massive Data: Market-Basket Analysis}
+\author{Timur Rezepov}
+\dept{Master's Degree Course in Data Science for Economics} 
+\anno{2024-2025}
+\matricola{34177A}
+\relatore{Prof Dario Malchiodi} %instructor
+
+\beforepreface
+
+%
+%
+%			Declaration
+I declare that this material, which I now submit for assessment, is entirely my own work and has not been taken from the work of others, save and to the extent that such work has been cited and acknowledged within the text of my work, and including any code produced using generative AI systems. I understand that plagiarism, collusion, and copying are grave and serious offences in the university and accept the penalties that would be imposed should I engage in plagiarism, collusion or copying. This assignment, or any part of it, has not been previously submitted by me or any other person for assessment on this or any other course of study.
+
+\afterpreface
+
+\input sections/1-intro.tex
+\input sections/2-dataset.tex
+\input sections/3-preprocessing.tex
+\input sections/4-algorithms.tex
+\input sections/5-market-basket.tex
+\input sections/6-experiments.tex
+\input sections/7-keypoints.tex
+
+
+
+\end{document}
+
+
+ 

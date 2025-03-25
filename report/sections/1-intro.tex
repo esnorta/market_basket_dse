@@ -1,0 +1,30 @@
+% 
+% 
+%			1: Introduction
+\chapter{Introduction}
+\label{chap:introduction}
+
+
+The market-basket analysis is used to describe many-to-many relationship between two kinds of objects.
+
+The results of market-basket analysis can be presented in the form of association rules: \textit{I}$\,\to\,$\textit{j}, where \textit{j} is an item.
+
+The core concepts of market-basket analysis are:
+\begin{itemize}
+	\item \texttt{item} - individual entity (product, book, etc); 
+	\item \texttt{basket} or \texttt{transaction} - a collection of items seen (bought, liked) together;  
+	\item \texttt{frequent itemset} - a set of items \textit{I} which appears in the number of baskets as a subset;
+	\item \texttt{support} - a number of baskets for which \textit{I} is a subset;
+	\item \texttt{confidence} of the association rule - is the fraction of the baskets with all of \textit{I} that also contain \textit{j}.
+\end{itemize}
+
+The defined association rules can then further be used in a various ways: recommendation systems, cross-selling, bundle strategies.
+
+The theoretical concepts and solution approaches are mostly based on the course material and textbook Mining of Massive Datasets(A. Rajaraman, J. Ullman):
+\begin{itemize}
+	\item \texttt{frequent itemsets};
+	\item \texttt{finding similar items};
+	\item \texttt{MapReduce}.
+\end{itemize}
+
+The software used: python3.12, jupyter notebook, pandas.

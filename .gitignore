@@ -1,0 +1,11 @@
+.DS_Store
+.ipynb_checkpoints/
+data/
+work/
+
+*.swo
+*.bib
+*.aux
+*.log
+*.out
+*.toc
